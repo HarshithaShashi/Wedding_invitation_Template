@@ -92,6 +92,30 @@
   text-decoration: underline;
 }
 
+/* Location button styling */
+.location-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #6e7c66; /* Initial green color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Fade effect */
+  text-decoration: none;
+}
+
+.location-button:hover {
+  background-color: #9ea88f; /* Faded green color on hover */
+}
+
+/* Map container styling */
+.map-container {
+  margin-top: 20px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .event-card {
