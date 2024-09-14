@@ -1,28 +1,110 @@
-/* Events Section Styles */
+/* General Styling */
 .events {
-    padding: 100px 50px;
-    background-color: #fff;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.events-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  color: #9db09b;
+  margin-bottom: 50px;
+  display: inline-block;
+  position: relative;
+}
+
+.events-heading::before {
+  content: '';
+  display: block;
+  width: 300px;
+  height: 2px;
+  background: #9db09b;
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*.events-heading::before {
+  content: url('../assets/images/Picture1.jpg');
+  display: block;
+  margin: 10px auto;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}*/
+
+/* Event Card */
+.event-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 30px;
+  width: 80%;
+  margin: 0 auto 50px;
+}
+
+.event-details {
+  flex: 1;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.event-info p {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: #888;
+  margin: 10px 0;
+}
+
+.event-info i {
+  color: #9db09b;
+  margin-right: 10px;
+}
+
+.event-image {
+  flex: 1;
+  text-align: right;
+}
+
+.event-image img {
+  max-width: 90%;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Location Link */
+.location-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: #9db09b;
+  text-decoration: none;
+}
+
+.location-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .event-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .event-details, .event-image {
+    max-width: 100%;
     text-align: center;
   }
-  
-  .events h2 {
-    font-size: 36px;
-    margin-bottom: 50px;
-    color: #333;
+
+  .event-image img {
+    max-width: 100%;
   }
-  
-  .event {
-    margin-bottom: 40px;
-  }
-  
-  .event h3 {
-    font-size: 28px;
-    margin-bottom: 10px;
-    color: #ff7f50;
-  }
-  
-  .event p {
-    font-size: 18px;
-    color: #666;
-  }
-  
+}

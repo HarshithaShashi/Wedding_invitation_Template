@@ -1,19 +1,23 @@
 import React from 'react';
 import './StorySection.css';
 import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Carousel styles
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; 
 
 import image1 from '../assets/images/image2.jpg';
 import image2 from '../assets/images/firstdate.jpg';
 import image3 from '../assets/images/image3.jpg';
 import image4 from '../assets/images/image1.jpg';
-import image5 from '../assets/images/proposal.jpg'; // Additional image for carousel
-import image6 from '../assets/images/image2.jpg'; // Additional image for carousel
+import image5 from '../assets/images/proposal.jpg'; 
+import image6 from '../assets/images/image2.jpg'; 
+import image7 from '../assets/images/Picture1.jpg'; 
 
 const StorySection = () => {
     return (
         <div className='Story_Meeting' id='Story'>
             {/* Story Section */}
+            <div>
+                <img src={image7} height={100}/>
+            </div>
             <div className='Story_heading'>Our Love Story</div>
 
             {/* First Meet Section */}
@@ -37,7 +41,7 @@ const StorySection = () => {
                 </div>
             </div>
 
-            {/* First Date Section with Carousel */}
+            {/* First Date Section*/}
             <div className='Events_box'>
                 <div className='Event_box_left'>
                     <h3 className='Event_Date'>Feb 14, 2023</h3>
@@ -65,7 +69,7 @@ const StorySection = () => {
                 </div>
             </div>
 
-            {/* Proposal Section with Carousel */}
+            {/* Proposal Section*/}
             <div className='Events_box'>
                 <div className='Event_box_left'>
                     <h3 className='Event_Date'>Apr 12, 2023</h3>

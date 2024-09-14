@@ -18,14 +18,13 @@ function TimeSection() {
     return { days, hours, minutes, seconds };
   }, [targetDate]);
   const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining);
-  // console.log(timeRemaining)
 
   useEffect(() => {
     const timer = setInterval(() => {
       setTimeRemaining(calculateTimeRemaining());
     }, 1000);
     return () => clearInterval(timer);
-  }, [calculateTimeRemaining]);
+  }, [calculateTimeRemaining]);//dependence array
 
 
   return (

@@ -12,7 +12,7 @@ heading{
 }
 
 .Story_heading {
-    margin-top: 100px;
+    margin: 10px;
     fontFamily: '"Bebas Neue", sans-serif';
     font-size: 2.5rem;
     color: #333; 
@@ -20,9 +20,8 @@ heading{
     background-color: #e3bba45e; 
     padding: 20px 40px; 
     border-radius: 0px; 
-    margin: 20px auto; 
     display: inline-block;
-    position: static; /* To position the bird icon */
+    position: static; 
 }
 
 /*Story_heading::before {
@@ -44,7 +43,7 @@ heading{
     position: relative;
 }
 
-/* Left aligned box with event details */
+
 .Event_box_left {
     width: 45%;
     text-align: left;
@@ -121,7 +120,6 @@ heading{
     margin-bottom: 10px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .Events_box {
         flex-direction: column;
