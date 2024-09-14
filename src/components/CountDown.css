@@ -1,14 +1,16 @@
 .Count {
-    margin-top: 130px;
+    padding-top: 100px;
     position: relative;
-    background: url('../assets/images/couplebackground2.jpg') no-repeat center center/cover;
-    height: 60vh;
+    background: url('../assets/images/couplebackground.jpg') ;
+    background-size: 200px 200px; /* Set specific width and height */
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 100px;
   }
 
   .overlay {
+    padding-top: 100px;
     text-align: center;
     color: white;
   }
@@ -22,3 +24,9 @@
     font-size: 48px;
     font-family: 'Dancing Script', cursive; /* Use a script font like in the image */
   }
+  @media (max-width: 768px) {
+    .Count {
+      background-size: 100% 200px;  /* Smaller size for mobile */
+    }
+  }
+  

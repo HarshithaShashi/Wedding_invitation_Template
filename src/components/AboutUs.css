@@ -33,6 +33,7 @@
   display: grid;
   gap: 0px;
   align-items: center;
+  margin-bottom: 150px;
 }
 
 .about-row {

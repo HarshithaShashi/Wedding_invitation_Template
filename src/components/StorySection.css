@@ -4,6 +4,7 @@ heading{
 }
 /* Container for the whole story section */
 .Story_Meeting {
+    margin-top: 100px;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
@@ -11,6 +12,7 @@ heading{
 }
 
 .Story_heading {
+    margin-top: 100px;
     fontFamily: '"Bebas Neue", sans-serif';
     font-size: 2.5rem;
     color: #333; 
