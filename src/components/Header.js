@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Header.css';
+import image1 from '../assets/images/Picture3.jpg';
 
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -25,7 +26,11 @@ const Header = () => {
   return (
     <header className={isSticky ? 'header sticky' : 'header'}>
       <nav className="navbar">
-        <a href="#home" className="logo">L J</a>
+        <a href="#home" className="logo">
+          <span className="logo-left">L</span>
+          <img src={image1} height={38} alt="Logo Image" className="logo-image" />
+          <span className="logo-right">S</span>
+        </a>
         <ul className="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">Couple</a></li>
@@ -36,6 +41,7 @@ const Header = () => {
       </nav>
     </header>
   );
-};
+  
+};  
 
 export default Header;
