@@ -25,15 +25,15 @@
   }
   
   .hero-content {
-    position: relative;
+    position: absolute;
     z-index: 2;
   }
   
   .hero h1 {
-    padding-top: 300px;
+    padding-top: 390px;
     margin-top: 100px;
     font-size: 56px;
-    margin-right: 170px;
+    margin-right: 200px;
     margin-top: 20px;
     color: #fff;
     font-weight: bold;
@@ -42,12 +42,12 @@
   
   .hero p {
     font-size: 24px;
-    margin-right: 170px;
+    margin-right: 220px;
     margin-bottom: 30px;
   }
   
   .cta-button {
-    margin-right: 170px;
+    margin-right: 240px;
     margin-bottom: 30px;
     background-color: #e3bba4b4;
     color: #fff;
