@@ -1,0 +1,119 @@
+/* About Us Section Styles */
+.about-us {
+    padding: 0px 0px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  
+  .about-us p {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+.about-us {
+  padding: 0px;
+  background-color: #fefbfb;
+  padding-top: 100px;
+
+}
+
+.about-container {
+
+  width: 1200px;
+  height: 900px;
+  margin: auto;
+  display: grid;
+  gap: 0px;
+  align-items: center;
+}
+
+.about-row {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  align-items: center;
+  gap: 0px;
+}
+
+.about-image img {
+  display: grid;
+  width: 600px;
+  height: 450px;
+  border-radius: 0px;
+}
+
+
+.about-info {
+  background-color: #e3bba45e; /* Light green background for the text block */
+  padding: 0px;
+  width: 600px;
+  height: 450px;
+  border-radius: 0px;
+
+  /* Center horizontally */
+  margin: auto; /* This centers the block horizontally */
+}
+
+.about-info h3 {
+  padding-top: 20px;
+  font-size: 50px;
+  color: #333;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.about-info p {
+  font-size: 16px;
+  color: #666;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.about-info h4 {
+  font-size: 30px;
+  color: #f6f0f0;
+  padding-left: 20px;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.groom-signature, .bride-signature {
+  font-style: italic;
+  margin-top: 20px;
+  color: #333;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: #6c757d;
+  margin-right: 10px;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ff7f50;
+}
+
+@media (max-width: 768px) {
+  .about-row {
+    grid-template-columns: 1fr; /* Stack columns on small screens */
+    text-align: center;
+  }
+
+  .about-info {
+    padding: 20px;
+  }
+}
+  
